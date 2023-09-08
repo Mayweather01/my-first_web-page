@@ -53,3 +53,7 @@ img {
             right: 100%; /* Move to the right edge of the container */
         }
     }
+
+    h1 {
+        text-align: end;
+    }
