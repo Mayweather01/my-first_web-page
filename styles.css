@@ -1,0 +1,55 @@
+ /* Add your CSS styling here */
+ 
+
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    bottom: auto 20px;
+    ;
+}
+
+.social-icons a {
+    margin-bottom: 10px;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+#currentTime {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+       /* Add your CSS styling here */
+       .welcome-message {
+        font-size: 24px;
+        font-weight: bold;
+        color: white; /* Change this to your desired text color */
+        position: absolute;
+        animation: moveWelcomeMessage 30s linear infinite;
+    }
+
+    @keyframes moveWelcomeMessage {
+        0% {
+            right: 0;
+        }
+        50% {
+            right: 50%; /* Move halfway across the container */
+        }
+        100% {
+            right: 100%; /* Move to the right edge of the container */
+        }
+    }
