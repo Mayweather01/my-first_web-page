@@ -27,7 +27,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: black;
+    color: darkgreen;
     font-weight: bold;
 }
 
@@ -87,16 +87,16 @@ ul li {
 
 footer {
     background-color:white;
-    color: black;
+    color: darkgreen;
     text-align: center;
     padding: 10px 0;
 }
 
  /* Add your CSS styling here */
  .welcome-message {
-    font-size: 24px;
+    font-size: 13px;
     font-weight: bold;
-    color: black; /* Change this to your desired text color */
+    color: darkgreen; /* Change this to your desired text color */
     position: absolute;
     animation: moveWelcomeMessage 30s linear infinite;
 }
