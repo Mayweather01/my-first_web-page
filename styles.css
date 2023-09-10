@@ -101,3 +101,23 @@ footer {
     animation: moveWelcomeMessage 30s linear infinite;
 }
 
+@keyframes moveWelcomeMessage {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: 50%; /* Move halfway across the container */
+    }
+    100% {
+        right: 100%; /* Move to the right edge of the container */
+    }
+}
+
+h1 {
+    text-align: end;
+}
+
+a {
+    color: white /* Change this color code to your preferred color */
+    /* Other link styles */
+}
