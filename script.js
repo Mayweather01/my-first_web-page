@@ -1,20 +1,21 @@
-// JavaScript code to display the current day of the week
-function updateCurrentDay() {
-    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const currentDay = daysOfWeek[new Date().getUTCDay()];
-    document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = currentDay;
-}
+// script.js
 
-// JavaScript code to display the current UTC time
-function updateCurrentTime() {
-    const currentTime = new Date().toUTCString();
-    document.querySelector('[data-testid="currentUTCTime"]').textContent = currentTime;
-}
-
-// JavaScript code to update time and date continuously
+// Function to update the West African Time (WAT) with seconds
 function updateDateTime() {
-    updateCurrentDay();
-    updateCurrentTime();
+    const now = new Date();
+    const options = {
+        timeZone: 'Africa/Lagos',
+        hour12: false,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit', // Include seconds
+    };
+    const watTime = now.toLocaleTimeString('en-US', options);
+    
+    document.getElementById('wat-time').textContent = watTime;
 }
 
-setInterval(updateDateTime, 1000); // Update every second
+// Update the WAT time with seconds initially and then every second
+updateDateTime();
+setInterval(updateDateTime, 1000);
+
