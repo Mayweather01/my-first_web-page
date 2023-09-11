@@ -150,7 +150,7 @@ a {
     margin: 0 auto 20px;
     z-index: 1; /* Place the profile picture below the cloud */
     opacity: 0; /* Initially, make the profile picture invisible */
-    animation: revealProfile 10s ease-in-out forwards; /* Add this reveal animation */
+    animation: revealProfile 5s ease-in-out forwards; /* Add this reveal animation */
 }
 
 @keyframes revealProfile {
