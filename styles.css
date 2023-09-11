@@ -130,6 +130,8 @@ a {
     text-align: center; /* Center the profile picture horizontally */
     margin-top: 40px; /* Adjust margin as needed */
     position: relative; /* Position relative to contain the cloud element */
+    overflow: hidden; /* Hide any overflowing content */
+    height: 200px; /* Set a fixed height for the container */
 }
 
 .cloud {
@@ -146,18 +148,17 @@ a {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    display: block;
     margin: 0 auto 20px;
     z-index: 1; /* Place the profile picture below the cloud */
-    opacity: 0; /* Initially, make the profile picture invisible */
-    animation: revealProfile 5s ease-in-out forwards; /* Add this reveal animation */
+    transform: translateX(-100%); /* Initially, move the profile picture to the left */
+    animation: rollInProfile 3s ease-in-out forwards; /* Add this roll-in animation */
 }
 
-@keyframes revealProfile {
+@keyframes rollInProfile {
     0% {
-        opacity: 0; /* Start with the profile picture invisible */
+        transform: translateX(-100%); /* Start with the profile picture off the left edge */
     }
     100% {
-        opacity: 1; /* End with the profile picture fully visible */
+        transform: translateX(0); /* End with the profile picture at its original position */
     }
 }
