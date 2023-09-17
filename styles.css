@@ -127,11 +127,11 @@ a {
 /* ... (your existing CSS code) ... */
 
 .profile-picture-container {
-    text-align: center; /* Center the profile picture horizontally */
-    margin-top: 40px; /* Adjust margin as needed */
-    position: relative; /* Position relative to contain the cloud element */
-    overflow: hidden; /* Hide any overflowing content */
-    height: 200px; /* Set a fixed height for the container */
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
 }
 
 .cloud {
@@ -140,8 +140,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white; /* White background */
-    z-index: 2; /* Place the cloud above the profile picture */
+    background-color: white;
+    z-index: 2;
 }
 
 .profile-picture {
@@ -149,16 +149,31 @@ a {
     height: 200px;
     border-radius: 50%;
     margin: 0 auto 20px;
-    z-index: 1; /* Place the profile picture below the cloud */
-    transform: translateX(-100%); /* Initially, move the profile picture to the left */
-    animation: rollInProfile 3s ease-in-out forwards; /* Add this roll-in animation */
+    z-index: 1;
+    transform: translateX(-100%);
+    animation: rollInProfile 3s ease-in-out forwards;
+}
+
+.about-section {
+    /* Initially, move the "About Me" section off the right edge */
+    transform: translateX(100%);
+    animation: rollInAbout 3s ease-in-out forwards;
 }
 
 @keyframes rollInProfile {
     0% {
-        transform: translateX(-100%); /* Start with the profile picture off the left edge */
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateX(0); /* End with the profile picture at its original position */
+        transform: translateX(0);
+    }
+}
+
+@keyframes rollInAbout {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
