@@ -29,6 +29,7 @@ nav{
 }
 .logo{
     width: 140px;
+    margin-top: auto;
 }
 nav ul li{
     display: inline-block;
@@ -63,7 +64,11 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
+    color: #fff;
+}
+.header-text p span{
     color: #ff004f;
+    font-size: 2;
 }
 /*---------------about------------*/
 #about{
