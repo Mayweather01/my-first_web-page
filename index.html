@@ -26,8 +26,9 @@
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Software Engineer</p>
-          <h1>Hi, I'm <span>Godwin</span><br />Agbo From Nigeria</h1>
+          <p>Hi, my name is</p>
+          <h2>Godwin Agbo</h2>
+          <h1>I'm <span class="auto-input"></span><br /></h1>
         </div>
       </div>
     </div>
@@ -99,6 +100,7 @@
       </div>
     </div>
     <!-----------services------->
+    //
     <div id="services">
       <div class="container">
         <h1 class="sub-title">My Services</h1>
@@ -285,6 +287,16 @@
             form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: ["a software developer", "let's connect"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
       });
     </script>
   </body>
